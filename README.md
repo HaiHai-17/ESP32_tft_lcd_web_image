@@ -1,6 +1,6 @@
-# 🌐 Website Control ESP32 Image
+# 🌐 Website Control ESP32C# Super Mini Image
 
-Một giao diện web để điều khiển và hiển thị hình ảnh từ thiết bị **ESP32**. Dự án này sử dụng **ESP32** để truyền hình ảnh từ camera và hiển thị trực tiếp trên trình duyệt.
+Một giao diện web để điều khiển và hiển thị hình ảnh từ thiết bị **ESP32C3 Super Mini**. Dự án này sử dụng **ESP32C3 Super Mini** để truyền hình ảnh từ LittleFS và hiển thị trực tiếp trên màn hình. Được điều khiển và nạp hình ảnh qua Website.
 
 ---
 
@@ -30,7 +30,7 @@ Một giao diện web để điều khiển và hiển thị hình ảnh từ th
 
 ## 🛠 Công nghệ sử dụng (Technologies Used)
 
-* **ESP32**: Bộ vi điều khiển hỗ trợ WiFi, Bluetooth
+* **ESP32C3 Super Mini**: Bộ vi điều khiển hỗ trợ WiFi, Bluetooth
 * **HTML/CSS/JavaScript**: Xây dựng giao diện người dùng (User Interface)
 * **WebSocket**: Giao tiếp thời gian thực (real-time communication) giữa trình duyệt và ESP32
 * **Image**: Hiển thị hình ảnh đến màn hình
@@ -39,7 +39,7 @@ Một giao diện web để điều khiển và hiển thị hình ảnh từ th
 
 ## 📂 Cách sử dụng (How to Use)
 
-1. Tải mã nguồn lên ESP32
-2. Kết nối ESP32 với mạng WiFi
-3. Truy cập địa chỉ IP của ESP32 192.168.1.123
-4. Bắt đầu điều khiển và xem hình ảnh trực tiếp
+1. Tải mã nguồn lên ESP32C3 Super Mini
+2. Kết nối ESP32C3 Super Mini với mạng WiFi
+3. Truy cập địa chỉ IP của ESP32C3 Super Mini: 192.168.1.123
+4. Bắt đầu điều khiển và xem hình ảnh trực tiếp trên màn hình
