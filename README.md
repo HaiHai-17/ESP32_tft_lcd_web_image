@@ -1,4 +1,4 @@
-# 🌐 Website Control ESP32C# Super Mini Image
+# 🌐 Website Control ESP32C3 Super Mini Image
 
 Một giao diện web để điều khiển và hiển thị hình ảnh từ thiết bị **ESP32C3 Super Mini**. Dự án này sử dụng **ESP32C3 Super Mini** để truyền hình ảnh từ LittleFS và hiển thị trực tiếp trên màn hình. Được điều khiển và nạp hình ảnh qua Website.
 
