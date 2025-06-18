@@ -15,11 +15,8 @@ Arduino_DataBus *bus = new Arduino_SWSPI(TFT_DC, TFT_CS, TFT_SCK, TFT_MOSI);
 Arduino_GFX *gfx = new Arduino_ST7789(bus, TFT_RST, 240, 280);
 
 // ==== Cấu hình WiFi ====
-const char* ssid = "My Nhung";
-const char* password = "0932472990";
-IPAddress local_IP(192, 168, 1, 123);
-IPAddress gateway(192, 168, 1, 1);
-IPAddress subnet(255, 255, 255, 0);
+const char* ssid = "ESP32_AP";
+const char* password = "123456789";
 
 // ==== Web server ====
 WebServer server(80);
@@ -46,16 +43,11 @@ void setup() {
     return;
   }
 
-  WiFi.config(local_IP, gateway, subnet);
-  WiFi.begin(ssid, password);
-  gfx->println("Dang ket noi WiFi...");
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    gfx->print(".");
-  }
-  gfx->println("");
-  gfx->print("WiFi OK: ");
-  gfx->println(WiFi.localIP());
+  WiFi.mode(WIFI_AP);
+  WiFi.softAP(ssid, password);
+  gfx->println("Phat WiFi thanh cong!");
+  gfx->print("IP AP: ");
+  gfx->println(WiFi.softAPIP());
 
   // Giao diện HTML upload với CSS đẹp và các chức năng mới
   server.on("/", HTTP_GET, []() {
